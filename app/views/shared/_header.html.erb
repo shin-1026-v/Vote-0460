@@ -1,21 +1,13 @@
-<div id="header">
-    <div class="logo">
-        <a href="/">ロゴ</a>
-    </div>
-    <div class="link">
-        <ul id="nav">
-            <li>
-                <a href="#">Top</a>
-            </li>
-            <li>
-                <a href="#">ニュース一覧</a>
-            </li>
-            <li>
-                <a href="#">ログイン</a>
-            </li>
-            <li>
-                <a href="#">問い合わせ</a>
-            </li>
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container">
+    <%= link_to "ロゴ", "#", id: "logo" %>
+    <nav>
+        <ul class="nav navbar-nav navbar-right">
+            <li><%= link_to "Top",          "#" %></li>
+            <li><%= link_to "ニュース一覧",   "#" %></li>
+            <li><%= link_to "新規登録",      "#" %></li>
+            <li><%= link_to "ログイン",      "#" %></li>
         </ul>
-    </div>
-</div>
+    </nav>
+  </div>
+</header>

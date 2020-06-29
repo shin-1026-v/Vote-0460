@@ -1,0 +1,32 @@
+@import "bootstrap-sprockets";
+ @import "bootstrap";
+
+/*---共通---*/
+
+body {
+  color: black;
+  background-color: white;
+ }
+ 
+ /* header */
+
+ .navbar-inverse {
+   background-color: white;
+   border-color: black;
+
+ }
+ 
+ #logo {
+  color:black;
+  font-size: 3em;
+  width: 3em;
+  float: left;
+ }
+
+ .container {
+  margin-right: auto;
+  margin-left: auto;
+  /* padding-left: 15px; */
+  /* padding-right: 15px; */
+ }
+ 
