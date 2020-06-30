@@ -1,12 +1,11 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
-  <div class="container">
-    <%= link_to "ロゴ", "#", id: "logo" %>
-    <nav>
-        <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to "Top",          "#" %></li>
-            <li><%= link_to "新規登録",      "#" %></li>
-            <li><%= link_to "ログイン",      "#" %></li>
-        </ul>
-    </nav>
-  </div>
+  <nav class="navbar navbar-light bg-light navbar-custom"> 
+    <a class="navbar-brand" href="#">Navbar</a> 
+      <ul class="nav navbar-nav navbar-right navbar-custom">
+        <li><%= link_to "Top",       root_path %></li>
+        <li><%= link_to "ニュース一覧",   "#" %></li>
+        <li><%= link_to "新規登録",      new_user_path %></li>
+        <li><%= link_to "ログイン",      "#" %></li>
+      </ul>
+  </nav>
 </header>
