@@ -29,4 +29,16 @@ body {
   /* padding-left: 15px; */
   /* padding-right: 15px; */
  }
+
+ /* forms */
+
+ input, textarea, select, .uneditable-input {
+  border: 1px solid black;
+  width: 100%;
+  margin-bottom: 30px;
+ }
+
+ input {
+  height: auto !important;
+}
  
