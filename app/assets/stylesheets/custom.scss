@@ -7,37 +7,40 @@ body {
   color: black;
   background-color: white;
  }
+
+ h1{
+  text-align: center;
+}
  
  /* header */
 
  .navbar-inverse {
    background-color: white;
    border-color: black;
-
  }
- 
- #logo {
-  float: left;
-  margin-right: 10px;
-  font-size: 1.7em;
-  color:black;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-  padding-top: 9px;
-  font-weight: bold;
-}
-
-#logo:hover {
-  color: #fff;
-  text-decoration: none;
-}
 
  .navbar-custom {
-  background-color: #337ab7;
+  background-color: black;
   color:#fff;
   border-radius:0;
   border-color: #337ab7;
   }
+
+  .navbar {
+    position: relative;
+    min-height: 50px;
+    /* margin-bottom: 20px; */
+    border: 1px solid transparent;
+
+}
+
+.navbar-brand {
+  color: white;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: white;
+}
   
  .container {
   margin-right: auto;
