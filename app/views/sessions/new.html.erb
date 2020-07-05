@@ -1,5 +1,4 @@
 <% provide(:title, 'ログイン画面') %>
-
 <h1>ログイン</h1>
 
 <div class='row'>
@@ -11,10 +10,12 @@
       <%= f.email_field :email, calss: 'form_control' %>
 
       <%= f.label :password, 'パスワード' %>
-      <%= f.email_field :password, calss: 'form_control' %>
+      <%= f.password_field :password, calss: 'form_control' %>
 
       <%= f.submit 'ログイン' %>
 
     <% end %>
+
+    <p>登録はまだですか? <%= link_to "新規登録", signup_path %></p>
   </div>
 </div>
