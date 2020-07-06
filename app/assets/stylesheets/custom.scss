@@ -3,14 +3,14 @@
 
 /*---共通---*/
 
-body {
+  body {
   color: black;
   background-color: white;
- }
+  }
 
- h1{
+  h1{
   text-align: center;
-}
+  }
  
 /* header */
 
@@ -41,6 +41,18 @@ body {
   .navbar-inverse .navbar-nav > li > a {
   color: white;
   }
+
+  /* Users index */
+
+  .users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid $gray-lighter;
+    }
+  }
   
   .container {
   margin-right: auto;
@@ -61,3 +73,19 @@ body {
   height: auto !important;
 }
  
+
+/* debug */
+
+@mixin box_sizing {
+  -moz-box-sizing:    border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing:         border-box;
+}
+
+.debug_dump {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 45px;
+  @include box_sizing;
+}
