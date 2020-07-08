@@ -42,7 +42,7 @@
   color: white;
   }
 
-  /* Users index */
+/* Users index */
 
   .users {
   list-style: none;
@@ -71,21 +71,21 @@
 
  input {
   height: auto !important;
-}
+  }
  
 
 /* debug */
 
-@mixin box_sizing {
+  @mixin box_sizing {
   -moz-box-sizing:    border-box;
   -webkit-box-sizing: border-box;
   box-sizing:         border-box;
-}
+  }
 
-.debug_dump {
+  .debug_dump {
   clear: both;
   float: left;
   width: 100%;
   margin-top: 45px;
   @include box_sizing;
-}
+  }
