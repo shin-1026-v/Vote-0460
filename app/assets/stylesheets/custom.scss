@@ -1,78 +1,55 @@
 @import "bootstrap-sprockets";
- @import "bootstrap";
+@import "bootstrap";
 
 /*---共通---*/
 
   body {
-  color: black;
-  background-color: white;
+  background: #f2f2f2;
   }
 
-  h1{
-  text-align: center;
-  }
  
 /* header */
 
-  .navbar-inverse {
-   background-color: white;
-   border-color: black;
+  header {
+    background-color:#d4cece;  
   }
 
-  .navbar-custom {
-  background-color: #aaab98;
-  color:#fff;
-  border-radius:0;
-  border-color: #337ab7;
+  #logo {
+   color: black;
+   font-size: 3em;
+   float: left;
+   padding-top: 10px;
   }
 
-  .navbar {
-    position: relative;
-    min-height: 50px;
-    /* margin-bottom: 20px; */
-    border: 1px solid transparent;
-
+  .navbar-nav >
+   li > a {
+    color: black;
   }
 
-  .navbar-inverse .navbar-brand {
-  color: white;
+  
+
+/* main */
+  img {
+    float: right;
   }
 
-  .navbar-inverse .navbar-nav > li > a {
-  color: white;
+  .inner-box {
+    border: 3px solid black;
+    height: 100%;
   }
+
+  .row-eq-height {
+  display: flex;
+  flex-wrap: wrap;
+  }
+
 
 /* Users index */
 
-  .users {
-  list-style: none;
-  margin: 0;
-  li {
-    overflow: auto;
-    padding: 10px 0;
-    border-bottom: 1px solid $gray-lighter;
-    }
-  }
-  
-  .container {
-  margin-right: auto;
-  margin-left: auto;
-  /* padding-left: 15px; */
-  /* padding-right: 15px; */
-  }
 
-/* forms */
 
- input, textarea, select, .uneditable-input {
-  border: 1px solid black;
-  width: 100%;
-  margin-bottom: 30px;
- }
 
- input {
-  height: auto !important;
-  }
- 
+
 
 /* debug */
 

@@ -3,4 +3,5 @@ class User < ApplicationRecord
   validates :email, presence: true
   has_secure_password
   has_many :answer_sets
+  has_many :nswes_topics
 end

@@ -1,31 +1,23 @@
 <% provide(:title, '新規登録画面') %>
 
-<h1>新規登録</h1>
+<div class="container">
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <div class="list-group">
+          <h1>新規登録</h1>
 
-<div class='row'>
-  <div class='col-md-6 col-md-offset-3'>
-
-    <%= form_for(@user) do |f| %>
-      <p>
-        <%= f.label :name, '名前' %>
-        <%= f.text_field :name %>
-      </p>
-      <p>
-        <%= f.label :email, 'アドレス' %>
-        <%= f.email_field :email %>
-      </p>
-      <p>
-        <%= f.label :password, 'パスワード' %>
-        <%= f.password_field :password %>
-      </p>
-      <p>
-        <%= f.label :password_confirmation, '確認' %>
-        <%= f.password_field :password_confirmation %>
-      </p>
-      <p>
-        <%= f.submit '登録' %>
-      </p>
-      
-    <% end %>
+          <%= form_for(@user) do |f| %>
+            <%= f.label :name, '名前' %>
+            <div class="list-group"><%= f.text_field :name %></div>
+            <%= f.label :email, 'アドレス' %>
+            <div class="list-group"><%= f.email_field :email %></div>
+            <%= f.label :password, 'パスワード' %>
+            <div class="list-group"><%= f.password_field :password %></div>
+            <%= f.label :password_confirmation, '確認' %>
+            <div class="list-group"><%= f.password_field :password_confirmation %></div>
+            <%= f.submit '登録' %>
+          <% end %>
+      </div>
+    </div>
   </div>
 </div>
