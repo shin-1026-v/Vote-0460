@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20200708095844) do
+ActiveRecord::Schema.define(version: 20200717084134) do
 
   create_table "answer_sets", force: :cascade do |t|
     t.string "answer"
@@ -24,6 +24,14 @@ ActiveRecord::Schema.define(version: 20200708095844) do
     t.string "title"
     t.text "content"
     t.string "topic_flag"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "user_id"
+    t.index ["user_id"], name: "index_news_topics_on_user_id"
+  end
+
+  create_table "posts", force: :cascade do |t|
+    t.string "image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

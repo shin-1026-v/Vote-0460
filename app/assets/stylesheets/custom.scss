@@ -4,15 +4,25 @@
 /*---共通---*/
 
   body {
-  background: #f2f2f2;
+    background: #f2f2f2;
+    margin-right: auto;
+    margin-left : auto;
   }
 
+  main {
+    margin-right: auto;
+  }
  
 /* header */
 
   header {
-    background-color:#d4cece;  
+    background-color:#f2f2f2;  
   }
+
+  .navbar {
+    margin-bottom: 10px;
+  }
+
 
   #logo {
    color: black;
@@ -26,23 +36,108 @@
     color: black;
   }
 
-  
-
 /* main */
-  img {
-    float: right;
+
+  .jumbotron {
+    background-color:#bdeb1a;
+    text-align: center;
+    margin-top: 0 ;
+    margin-right: 0px;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-image: url('test.jpg');
+    background-repeat: no-repeat;
+    background-position:center center;
+    background-size:auto;  
+    padding: 50px;
   }
 
-  .inner-box {
-    border: 3px solid black;
-    height: 100%;
+  .display-3 {
+    margin-bottom: 25px;
   }
 
-  .row-eq-height {
-  display: flex;
-  flex-wrap: wrap;
+  .menu li {
+    list-style: none;
+    float: left;
+    padding: 10px 10px;
+    background-color: #f2f2f2;
+    margin-left: 15px;
   }
 
+  .menu li a {
+    color: black;
+  }
+
+  .main1-container {
+    background-color: white;
+    display: inline-block;
+    text-align: center;
+    overflow: scroll;
+    text-overflow: ellipsis;
+    width: 30em;
+    margin-left: 15em;
+  }
+
+  .main2-container {
+    background-color: white;
+    display: inline-block;
+    text-align: center;
+    overflow: scroll;
+    text-overflow: ellipsis;
+    width: 30em;
+    margin-left: 15em;
+  }
+  
+  .main3-container {
+    background-color:white;
+    display: inline-block;
+    text-align: center;
+    overflow: scroll;
+    text-overflow: ellipsis;
+    width: 30em;
+    margin-left: 15em;
+  }
+
+  .main4-container {
+    background-color: white;
+    display: inline-block;
+    text-align: center;
+    overflow: scroll;
+    text-overflow: ellipsis;
+    width: 30em;
+    margin-left: 15em;
+  }
+
+  .main5-container {
+    background-color: white;
+    display: inline-block;
+    text-align: center;
+    overflow: scroll;
+    text-overflow: ellipsis;
+    width: 30em;
+    margin-left: 15em;
+  }
+
+  .main6-container {
+    background-color: white;
+    display: inline-block;
+    text-align: center;
+    overflow: scroll;
+    text-overflow: ellipsis;
+    width: 30em;
+    margin-left: 15em;
+  }
+
+  .news {
+    color: black;
+    text-align: center;
+    justify-content: center;
+  }
+
+
+
+  
 
 /* Users index */
 

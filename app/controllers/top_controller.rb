@@ -1,5 +1,7 @@
 class TopController < ApplicationController
+
   def index
+    @news_topics = NewsTopic.select("title", "content")
   end
 
   def new
