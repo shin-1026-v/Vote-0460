@@ -1,17 +1,19 @@
 <% provide(:title, 'ログイン画面') %>
 
 <div class="container">
-  <div class="row">
-    <div class="col-md-12">
-      <h1>ログイン</h1>
-      <%= form_for(:session, url: login_path) do |f| %>
-        <%= f.label :email, 'アドレス' %>
-        <%= f.email_field :email, class: 'form-control' %>
-        <%= f.label :password, 'パスワード' %>
-        <%= f.password_field :password, class: 'form-control' %>
-        <%= f.submit 'ログイン' %>
-      <% end %>
-      <p>登録はまだですか? <%= link_to "新規登録", signup_path %></p>
+  <div class="login-container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>ログイン</h1>
+        <%= form_for(:session, url: login_path) do |f| %>
+          <%= f.label :email, 'アドレス' %>
+          <%= f.email_field :email, class: 'form-control' %>
+          <%= f.label :password, 'パスワード' %>
+          <%= f.password_field :password, class: 'form-control' %>
+          <%= f.submit 'ログイン' %>
+        <% end %>
+        <p>登録はまだですか? <%= link_to "新規登録", signup_path %></p>
+      </div>
     </div>
   </div>
 </div>

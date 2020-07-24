@@ -9,8 +9,9 @@
     margin-left : auto;
   }
 
-  main {
-    margin-right: auto;
+  .row {
+    margin-left: 0px;
+    margin-right: 0px
   }
  
 /* header */
@@ -28,7 +29,7 @@
    color: black;
    font-size: 3em;
    float: left;
-   padding-top: 10px;
+   padding-top: 20px;
   }
 
   .navbar-nav >
@@ -36,7 +37,7 @@
     color: black;
   }
 
-/* main */
+/* メイン画面 */
 
   .jumbotron {
     background-color:#bdeb1a;
@@ -63,20 +64,44 @@
     padding: 10px 10px;
     background-color: #f2f2f2;
     margin-left: 15px;
+    font-size: 90%;
+    font-weight: bold;
   }
 
   .menu li a {
     color: black;
   }
 
-  .main1-container {
+  .main-container {
     background-color: white;
     display: inline-block;
     text-align: center;
-    overflow: scroll;
-    text-overflow: ellipsis;
     width: 30em;
-    margin-left: 15em;
+    margin-left: 35px;
+    margin-top: 15px;
+  }
+
+  .news {
+    color: black;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .news-body {
+    color: black;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+
+  .hoge {
+    display: inline-block;
   }
 
   .main2-container {
@@ -129,34 +154,42 @@
     margin-left: 15em;
   }
 
-  .news {
-    color: black;
-    text-align: center;
-    justify-content: center;
-  }
 
 
-/* news-list */
+/* news一覧 */
 
-  .list-container {
-    text-align: center;
-    list-style: none;
+.news-list-container {
+  background-color: white;
+  text-align: center;
+  padding: 50px;
+}
+
+  .page-title {
+    font-size: 200%;
+    font-weight: bold;
+    margin-bottom: 2em;
   }
   
+  .news-title {
+    font-size: 100%;
+    font-weight: bold;
+    border-bottom: dotted;
+    border-width: 1px;
+  }
 
 
+/* ログイン画面 */
+
+  .login-container {
+    background-color: white;
+  }
 
 
+/* 新規登録画面 */
 
-
-
-
-
-/* Users index */
-
-
-
-
+.sinup-container {
+  background-color: white;
+}
 
 
 /* debug */
