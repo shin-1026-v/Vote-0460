@@ -19,7 +19,7 @@ class UsersController < ApplicationController
        log_in @user
        session[:user_id] = @user.id
        flash[:success] = "登録完了しました!"
-       redirect_to @user
+       redirect_to root_url
     else
       render 'new'
     end

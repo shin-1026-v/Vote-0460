@@ -13,7 +13,7 @@
     <dic class="row">
       <div class="col-md-12">
         <ul class="menu">
-          <li><%= link_to "ニュース一覧",      newslist_path %></li>
+          <li><%= link_to "ニュース一覧",      news_topics_path %></li>
           <li><%= link_to "トピックス",        root_path %></li>
           <li><%= link_to "過去のニュース",     root_path %></li>
         </ul>
@@ -34,7 +34,7 @@
               <%= n.content %>
              </div>
             </div>
-            <p><a class="btn btn-secondary" href="#" role="button">記事一覧 &raquo;</a></p>
+            <P><a class="btn btn-secondary"><%= link_to "記事を読む",  news_topic_path(n.id) %>&raquo;</p></a>
           </div>
         </div>
       </div>

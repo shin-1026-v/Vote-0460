@@ -1,15 +1,11 @@
-<% provide(:title, 'ニュース一覧') %>
+<% provide(:title, '記事詳細') %>
 
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <div class="news-list-container">
-        
-          <p class="page-title">ニュース 一覧ページ</p>
-
-          <% @news_topics.each do |n| %>
-            <p class="news-title"><%= n.title %></p>
-          <% end %>
+        <div class="article-container">
+          <%= @news_topics.title %>
+          <%= @news_topics.content %>
         </div>
       </div>
     </div>

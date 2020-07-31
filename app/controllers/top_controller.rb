@@ -1,7 +1,7 @@
 class TopController < ApplicationController
 
   def index
-    @news_topics = NewsTopic.select("title", "content")
+    @news_topics = NewsTopic.all
   end
 
   def new

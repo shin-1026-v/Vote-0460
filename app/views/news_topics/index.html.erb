@@ -1,0 +1,19 @@
+<% provide(:title, 'ニュース一覧') %>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="news-list-container">
+        <p class="page-title">ニュース 一覧ページ</p>
+        <% @news_topics.each do |n| %>
+          <p class="news-title">
+            <%= n.title %>
+            <% if current_user.admin? %>
+              <%= link_to "削除", news_topic_path(n.id), method: :delete,data: { confirm: "削除しますか?" } %>
+            <% end %>
+          </p>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

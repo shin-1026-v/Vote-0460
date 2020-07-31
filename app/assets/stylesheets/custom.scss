@@ -90,7 +90,7 @@
 
   .news-body {
     color: black;
-    padding: 10px;
+    padding-bottom: 25px;
     text-align: center;
     justify-content: center;
     word-break: break-all;
@@ -100,69 +100,13 @@
   }
 
 
-  .hoge {
-    display: inline-block;
-  }
-
-  .main2-container {
-    background-color: white;
-    display: inline-block;
-    text-align: center;
-    overflow: scroll;
-    text-overflow: ellipsis;
-    width: 30em;
-    margin-left: 15em;
-  }
-  
-  .main3-container {
-    background-color:white;
-    display: inline-block;
-    text-align: center;
-    overflow: scroll;
-    text-overflow: ellipsis;
-    width: 30em;
-    margin-left: 15em;
-  }
-
-  .main4-container {
-    background-color: white;
-    display: inline-block;
-    text-align: center;
-    overflow: scroll;
-    text-overflow: ellipsis;
-    width: 30em;
-    margin-left: 15em;
-  }
-
-  .main5-container {
-    background-color: white;
-    display: inline-block;
-    text-align: center;
-    overflow: scroll;
-    text-overflow: ellipsis;
-    width: 30em;
-    margin-left: 15em;
-  }
-
-  .main6-container {
-    background-color: white;
-    display: inline-block;
-    text-align: center;
-    overflow: scroll;
-    text-overflow: ellipsis;
-    width: 30em;
-    margin-left: 15em;
-  }
-
-
-
 /* news一覧 */
 
-.news-list-container {
+  .news-list-container {
   background-color: white;
   text-align: center;
   padding: 50px;
-}
+  }
 
   .page-title {
     font-size: 200%;
@@ -175,6 +119,14 @@
     font-weight: bold;
     border-bottom: dotted;
     border-width: 1px;
+  }
+
+/* 記事一覧 */
+
+  .article-container {
+  background-color: white;
+  text-align: center;
+  padding: 50px;
   }
 
 
@@ -190,6 +142,26 @@
 .sinup-container {
   background-color: white;
 }
+
+/* ユーザー一覧画面 */
+
+  .user-list-container {
+    background-color: white;
+    text-align: center;
+    padding: 50px;
+  }
+
+  .page-title-u {
+    font-size: 200%;
+    font-weight: bold;
+    margin-bottom: 2em;
+  }
+
+  .user-n {
+    font-size: 100%;
+    font-weight: bold;
+  }
+
 
 
 /* debug */
