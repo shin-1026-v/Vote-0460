@@ -13,9 +13,9 @@
     <dic class="row">
       <div class="col-md-12">
         <ul class="menu">
-          <li><%= link_to "ニュース一覧",      news_topics_path %></li>
-          <li><%= link_to "トピックス",        root_path %></li>
-          <li><%= link_to "過去のニュース",     root_path %></li>
+          <li><%= link_to "ニュース一覧",       news_topics_path %></li>
+          <li><%= link_to "トピックス",         root_path %></li>
+          <li><%= link_to "天気",              root_path %></li>
         </ul>
       </div>
     </div>
@@ -34,110 +34,14 @@
               <%= n.content %>
              </div>
             </div>
-            <P><a class="btn btn-secondary"><%= link_to "記事を読む",  news_topic_path(n.id) %>&raquo;</p></a>
+            <% if logged_in? && current_user.admin? %>
+              <P><a class="btn btn-secondary"><%= link_to "記事を読む",  news_topic_path(n.id) %>&raquo;</p></a>
+            <% elsif logged_in? %>
+              <P><a class="btn btn-secondary"><%= link_to "記事を読む",  news_topic_path(n.id) %>&raquo;</p></a>
+            <% end %>
           </div>
         </div>
       </div>
     <% end %>
   </div>
 
-
-  <!--<div class="container">
-    <% @news_topics.each do |n| %>
-      <div class="main1-container col-md-6">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="news">
-               <%= n.title %>
-              <div class="news-body">
-                <%= n.content %>
-              </div>
-            </div>
-              <p><a class="btn btn-secondary" href="#" role="button">記事一覧 &raquo;</a></p>
-          </div>
-        </div>
-      </div>
-    <% end %>
-  </div>-->
-
-
-  <!--<div class="container">
-    <% @news_topics.each do |n| %>
-      <div class="main1-container col-md-6">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="news">
-              <div>
-                <p><%= n.title %></p>
-              </div>
-              <div class="news-body">
-                <%= n.content %>
-              </div>
-              <p><a class="btn btn-secondary" href="#" role="button">記事一覧 &raquo;</a></p>
-            </div>
-        </div>
-      </div>
-    <% end %>
-  </div>-->
-
-  <!--<div class="main2-container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="news">
-          <h2><%= @news_topics[1]["title"] %></h2>
-          <h3><%= @news_topics[1]["content"] %></h3>
-        </div>
-          <p><a class="btn btn-secondary" href="#" role="button">記事一覧 &raquo;</a></p>
-      </div>
-    </div>
-  </div>
-
-  <div class="main3-container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="news">
-          <h2><%= @news_topics[2]["title"] %></h2>
-          <h3><%= @news_topics[2]["content"] %></h3>
-        </div>
-          <p><a class="btn btn-secondary" href="#" role="button">記事一覧 &raquo;</a></p>
-      </div>
-    </div>
-  </div>
-
-  <div class="main4-container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="news">
-          <h2><%= @news_topics[3]["title"] %></h2>
-          <h3><%= @news_topics[3]["content"] %></h3>
-        </div>
-          <p><a class="btn btn-secondary" href="#" role="button">記事一覧 &raquo;</a></p>
-      </div>
-    </div>
-  </div>
-
-  <div class="main5-container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="news">
-          <h2><%= @news_topics[4]["title"] %></h2>
-          <h3><%= @news_topics[4]["content"] %></h3>
-        </div>
-          <p><a class="btn btn-secondary" href="#" role="button">記事一覧 &raquo;</a></p>
-      </div>
-    </div>
-  </div>
-
-  <div class="main6-container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="news">
-          <h2><%= @news_topics[5]["title"] %></h2>
-          <h3><%= @news_topics[5]["content"] %></h3>
-        </div>
-          <p><a class="btn btn-secondary" href="#" role="button">記事一覧 &raquo;</a></p>
-      </div>
-    </div>
-  </div>
-  
-</main>-->

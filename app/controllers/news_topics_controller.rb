@@ -2,7 +2,6 @@ class NewsTopicsController < ApplicationController
 
   def index
     @news_topics = NewsTopic.all
-      
   end
 
   def show
@@ -14,6 +13,5 @@ class NewsTopicsController < ApplicationController
     flash[:success] = "削除しました"
     redirect_to news_topics_url
   end
-
   
 end

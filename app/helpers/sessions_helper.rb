@@ -10,8 +10,9 @@ module SessionsHelper
     user == current_user
   end
 
-
   # 現在ログイン中のユーザーを返す (いる場合)
+  # セッションのユーザーを確認
+  # セッションユーザーIDを持ってユーザーテーブルにfind byして存在するか確認
   def current_user
     if session[:user_id]
       @current_user ||= User.find_by(id: session[:user_id])
@@ -20,7 +21,7 @@ module SessionsHelper
 
   # ユーザーがログインしていればtrue、その他ならfalseを返す
   def logged_in?
-    !current_user.nil?
+    !current_user = nil
   end
 
   # 現在のユーザーをログアウトする
@@ -28,4 +29,5 @@ module SessionsHelper
     session.delete(:user_id)
     !current_user = nil
   end
+  
 end

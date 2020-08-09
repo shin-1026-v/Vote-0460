@@ -3,9 +3,18 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <div class="article-container">
-          <%= @news_topics.title %>
-          <%= @news_topics.content %>
+        <div class="article-title-container">
+          <h2><%= @news_topics.title %></h2>
+        </div>
+        <div class="article-content-container">
+          <p><%= @news_topics.content %></P>
+        </div>
+        <div class="answer-btn">
+          <%= link_to "賛成", root_path, class: "btn btn-primary btn-lg center-block" %>
+          <%= link_to "反対", root_path, class: "btn btn-danger btn-lg center-block" %>
+        </div>
+        <div class="answer-Return-btn">
+          <%= link_to "戻る", :back, class: "btn btn-default" %>
         </div>
       </div>
     </div>

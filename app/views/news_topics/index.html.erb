@@ -8,11 +8,17 @@
         <% @news_topics.each do |n| %>
           <p class="news-title">
             <%= n.title %>
-            <% if current_user.admin? %>
+            <% if logged_in? && current_user.admin? %>
+              <%= link_to "記事を読む",  news_topic_path(n.id) %>
               <%= link_to "削除", news_topic_path(n.id), method: :delete,data: { confirm: "削除しますか?" } %>
+            <% elsif logged_in? %>
+              <%= link_to "記事を読む",  news_topic_path(n.id) %>
+            <% else %>
+              <%= link_to "ログイン",  login_path %>
             <% end %>
           </p>
         <% end %>
+        <%= link_to "戻る", root_path, class: "btn btn-default" %>
       </div>
     </div>
   </div>

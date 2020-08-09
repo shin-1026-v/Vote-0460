@@ -99,7 +99,6 @@
     overflow: hidden;
   }
 
-
 /* news一覧 */
 
   .news-list-container {
@@ -121,27 +120,59 @@
     border-width: 1px;
   }
 
-/* 記事一覧 */
+/* news詳細ページ */
 
-  .article-container {
-  background-color: white;
-  text-align: center;
-  padding: 50px;
+  .article-title-container {
+    background-color: white;
+   text-align: center;
+    padding: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .article-content-container{
+    background-color: white;
+    text-align: center;
+    padding: 50px;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+/* news詳細answerページ */
+ 
+  .center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    margin-top: 25px;
+  }
+
+  .btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    margin-top: 25px;
   }
 
 
+
+/* 新規登録画面 */
+
+  .sinup-container {
+    background-color: white;
+  }
+    
 /* ログイン画面 */
 
   .login-container {
     background-color: white;
   }
-
-
-/* 新規登録画面 */
-
-.sinup-container {
-  background-color: white;
-}
 
 /* ユーザー一覧画面 */
 
@@ -163,19 +194,26 @@
   }
 
 
+  
+
+
+
+
+
+
 
 /* debug */
 
   @mixin box_sizing {
-  -moz-box-sizing:    border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing:         border-box;
+    -moz-box-sizing:    border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing:         border-box;
   }
 
   .debug_dump {
-  clear: both;
-  float: left;
-  width: 100%;
-  margin-top: 45px;
-  @include box_sizing;
+    clear: both;
+    float: left;
+   width: 100%;
+   margin-top: 45px;
+   @include box_sizing;
   }
