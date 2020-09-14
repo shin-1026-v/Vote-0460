@@ -10,13 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20200717084134) do
+ActiveRecord::Schema.define(version: 20200820131752) do
 
   create_table "answer_sets", force: :cascade do |t|
     t.string "answer"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "user_id"
+    t.integer "agree"
+    t.integer "non_agree"
+    t.integer "news_topic_id"
     t.index ["user_id"], name: "index_answer_sets_on_user_id"
   end
 
@@ -27,6 +30,7 @@ ActiveRecord::Schema.define(version: 20200717084134) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "user_id"
+    t.integer "news_topic_id"
     t.index ["user_id"], name: "index_news_topics_on_user_id"
   end
 

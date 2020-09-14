@@ -102,9 +102,9 @@
 /* news一覧 */
 
   .news-list-container {
-  background-color: white;
-  text-align: center;
-  padding: 50px;
+    background-color: white;
+    text-align: center;
+    padding: 50px;
   }
 
   .page-title {
@@ -130,13 +130,27 @@
     margin-bottom: 15px;
   }
 
-  .article-content-container{
+  .article-content-container {
     background-color: white;
     text-align: center;
     padding: 50px;
     word-break: break-all;
     text-overflow: ellipsis;
     overflow: hidden;
+  }
+
+  .btn-primary {
+    display: block;
+    margin-left: 180PX;
+    margin-top: 20px;
+    width: 150px;
+  }
+
+  .btn-warning {
+    display: block;
+    margin-left: 180PX;
+    margin-top: 20px;
+    width: 150px;
   }
 
 /* news詳細answerページ */
@@ -156,8 +170,8 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 100px;
-    margin-top: 25px;
+    width: 120px;
+    margin-top: 10px;
   }
 
 
@@ -192,6 +206,10 @@
     font-size: 100%;
     font-weight: bold;
   }
+
+
+
+  
 
 
   

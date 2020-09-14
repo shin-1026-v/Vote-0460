@@ -1,0 +1,22 @@
+<% provide(:title, '記事詳細回答') %>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="article-title-container">
+          <h2><%= @news_topics.title %></h2>
+        </div>
+        <div class="article-content-container">
+          <p><%= @news_topics.content %></P>
+        </div>
+        <div class="result-btn">
+          <button type="button" class="btn btn-primary">賛成</button><%= @answer_set_count %>
+          <button type="button" class="btn btn-warning">反対</button><%= @non_answer_count %>
+        </div>
+
+        <%= link_to "ニュース一覧へ", news_topics_path, class: "btn btn-default" %>
+        <%= link_to "トップページへ", root_path, class: "btn btn-default" %>
+
+      </div>
+    </div>
+  </div>

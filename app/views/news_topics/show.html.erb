@@ -10,12 +10,22 @@
           <p><%= @news_topics.content %></P>
         </div>
         <div class="answer-btn">
-          <%= link_to "賛成", root_path, class: "btn btn-primary btn-lg center-block" %>
-          <%= link_to "反対", root_path, class: "btn btn-danger btn-lg center-block" %>
-        </div>
+         <% if @alredy_answer %>
+          <button type="button" class="btn btn-primary">賛成</button>
+          <div id="namber">
+            <%= @answer_set_count %>
+          </div>
+          <button type="button" class="btn btn-warning">反対</button>
+          <%= @non_answer_count %>
+         <% else %>
+          <%= link_to "賛成", answer_sets_create_agree_path(@news_topics), method: :post, class: "btn btn-primary btn-lg center-block" %>
+          <%= link_to "反対", answer_sets_create_non_agree_path(@news_topics), method: :post, class: "btn btn-danger btn-lg center-block" %>
+         <% end %>
+        </div>      
         <div class="answer-Return-btn">
           <%= link_to "戻る", :back, class: "btn btn-default" %>
         </div>
       </div>
     </div>
   </div>
+

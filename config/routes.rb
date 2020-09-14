@@ -7,4 +7,7 @@ Rails.application.routes.draw do
   get    '/login',          to: 'sessions#new'
   post   '/login',          to: 'sessions#create'
   delete '/logout',         to: 'sessions#destroy'
+  post   'answer_sets/:news_topic_id/create_agree',  to: 'answer_sets#create_agree', as: :answer_sets_create_agree
+  post   'answer_sets/:news_topic_id/create_non_agree',  to: 'answer_sets#create_non_agree', as: :answer_sets_create_non_agree
+
 end
