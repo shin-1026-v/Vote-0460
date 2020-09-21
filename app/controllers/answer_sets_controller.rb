@@ -12,7 +12,7 @@ class AnswerSetsController < ApplicationController
     @news_topics = NewsTopic.find(params[:news_topic_id])
     @answer_set_count = AnswerSet.where(news_topic_id: params[:news_topic_id], agree: 1).count
   end
-  
+
 
   def create_non_agree
     @non_answer = current_user.answer_sets.new(news_topic_id: params[:news_topic_id], agree: 0, non_agree: 1)

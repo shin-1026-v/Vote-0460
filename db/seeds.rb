@@ -15,9 +15,15 @@ User.create!(name:  "shinya",
   99.times do |n|
     name  = Faker::Name.name
     email = "example-#{n+1}@gmail.com"
-    password = "password"
+    password = "123456"
     User.create!(name:  name,
                  email: email,
                  password:              password,
                  password_confirmation: password)
   end
+
+  50.times do |n|
+    NewsTopic.create!(user_id: User.find(1).id, title: "test #{n+1}", content: "test #{n+1}")
+  end
+
+
